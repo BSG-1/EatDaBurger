@@ -27,15 +27,13 @@
         <!-- creates button that gives button id and burger name back to server, unless devoured is TRUE -->
         <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
           <input type="hidden" name="burger_id" type="text" value={{this.id}}>
-          <button type="submit" class="btn btn-default">DEVOUR IT</button>
+          <button type="submit" class="btn btn-default" style="background-color: #F0E68C;">DEVOUR IT</button>
         </form>
       </div>
       {{/unless}}
       {{/each}}
     </div>
-  </div>
     
-  <div class="row">
     <!-- makes elements "devoured" readonly and inaccessible/faded -->
     <div class="col-xs-6 text-center" class="task" id="burgers_eaten">
       {{#each burger_data}}
